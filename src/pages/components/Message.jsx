@@ -1,8 +1,11 @@
 export default function Message({ message }) {
+  console.log("message", message);
+  // const { text, createdAt, username } = message;
   return (
     <div>
-      <p>{message.text}</p>
-      <p>{message.createdAt}</p>
+      <p>Message</p>
+      {/* <p>{text}</p>
+      <p>{createdAt}</p> */}
     </div>
   );
 }

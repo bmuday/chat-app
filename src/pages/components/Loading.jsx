@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Loading() {
   return (
-    <div classNameName="text-center p-8">
+    <div className="text-center p-8">
       <p>Loading Messages...</p>
       <div role="status">
         <svg
