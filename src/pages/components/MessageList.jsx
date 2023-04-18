@@ -5,7 +5,6 @@ import Loading from "./Loading";
 
 export default function MessageList() {
   const { data, error } = useSWR("/api/getMessages", fetcher);
-  console.log("data", data);
   if (!data) return <Loading />;
   return (
     <div className="p-10">

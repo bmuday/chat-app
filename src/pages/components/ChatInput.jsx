@@ -6,9 +6,7 @@ import fetcher from "../../../utils/fetchMessages";
 
 export default function ChatInput() {
   const [input, setInput] = useState("");
-  const { data: messages, mutate } = useSWR("/api/getMessages", fetcher, {
-    refreshInterval: 1000,
-  });
+  const { data: messages, mutate } = useSWR("/api/getMessages", fetcher);
 
   const addMessage = async (e) => {
     e.preventDefault();
